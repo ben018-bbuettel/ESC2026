@@ -120,7 +120,7 @@ function HomePage({ setPage, resultsEntered }) {
         <div className="info-card">
           <div className="info-icon">📋</div>
           <h3>Drei Gruppen</h3>
-          <p>Du tippst die Platzierungen in drei Kategorien: Top 10, Plätze 11–18 und Plätze 19–26</p>
+          <p>Du tippst die Platzierungen in drei Kategorien: Top 10, Plätze 11–18 und Plätze 19–25</p>
         </div>
         <div className="info-card">
           <div className="info-icon">🎯</div>
