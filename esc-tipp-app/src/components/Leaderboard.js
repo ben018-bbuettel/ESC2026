@@ -131,7 +131,7 @@ function ParticipantCard({ participant, rank, medal, resultsEntered, maxScore, c
   const GROUPS = [
     { key: 'top10', label: 'Top 10', emoji: '🥇', color: '#FFD700', ranks: Array.from({ length: 10 }, (_, i) => i + 1) },
     { key: 'mid', label: 'Plätze 11–18', emoji: '🥈', color: '#A78BFA', ranks: Array.from({ length: 8 }, (_, i) => i + 11) },
-    { key: 'lower', label: 'Plätze 19–26', emoji: '🥉', color: '#60A5FA', ranks: Array.from({ length: 8 }, (_, i) => i + 19) },
+    { key: 'lower', label: 'Plätze 19–25', emoji: '🥉', color: '#60A5FA', ranks: Array.from({ length: 7 }, (_, i) => i + 19) },
   ];
 
   return (
@@ -142,7 +142,7 @@ function ParticipantCard({ participant, rank, medal, resultsEntered, maxScore, c
         </div>
         <div className="lb-name-col">
           <span className="lb-name">{participant.name}</span>
-          <span className="lb-tipdone">{participant.tipCount} / 26 getippt</span>
+          <span className="lb-tipdone">{participant.tipCount} / 25 getippt</span>
         </div>
         {resultsEntered && (
           <div className="lb-score-col">
