@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabase';
 
-const ALL_RANKS = Array.from({ length: 26 }, (_, i) => i + 1);
+const ALL_RANKS = Array.from({ length: 25 }, (_, i) => i + 1);
 
 export default function AdminPage({ countries, results, onSave }) {
   const [rankAssign, setRankAssign] = useState(() => {
@@ -56,7 +56,7 @@ export default function AdminPage({ countries, results, onSave }) {
   const getGroup = (rank) => {
     if (rank <= 10) return { label: 'Top 10', color: '#FFD700' };
     if (rank <= 18) return { label: '11–18', color: '#A78BFA' };
-    return { label: '19–26', color: '#60A5FA' };
+    return { label: '19–25', color: '#60A5FA' };
   };
 
   return (
@@ -71,10 +71,10 @@ export default function AdminPage({ countries, results, onSave }) {
         <div className="progress-bar-outer">
           <div
             className="progress-bar-inner"
-            style={{ width: `${(Object.keys(rankAssign).length / 26) * 100}%` }}
+            style={{ width: `${(Object.keys(rankAssign).length / 25) * 100}%` }}
           />
         </div>
-        <span className="progress-text">{Object.keys(rankAssign).length} / 26 eingetragen</span>
+        <span className="progress-text">{Object.keys(rankAssign).length} / 25 eingetragen</span>
       </div>
 
       <div className="admin-grid">
@@ -124,7 +124,7 @@ export default function AdminPage({ countries, results, onSave }) {
           {saving ? '⏳ Speichern...' : '🏆 Ergebnisse speichern & Sieger ermitteln'}
         </button>
         {!allFilled && (
-          <p className="hint-text">Noch {26 - Object.keys(rankAssign).length} Plätze fehlen</p>
+          <p className="hint-text">Noch {25 - Object.keys(rankAssign).length} Plätze fehlen</p>
         )}
       </div>
     </div>
