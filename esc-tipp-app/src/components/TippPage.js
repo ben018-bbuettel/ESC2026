@@ -4,7 +4,7 @@ import { supabase } from '../supabase';
 const GROUPS = [
   { key: 'top10', label: 'Top 10', emoji: '🥇', desc: 'Platz 1–10', ranks: Array.from({ length: 10 }, (_, i) => i + 1), color: '#FFD700' },
   { key: 'mid', label: 'Plätze 11–18', emoji: '🥈', desc: 'Platz 11–18', ranks: Array.from({ length: 8 }, (_, i) => i + 11), color: '#A78BFA' },
-  { key: 'lower', label: 'Plätze 19–26', emoji: '🥉', desc: 'Platz 19–26', ranks: Array.from({ length: 8 }, (_, i) => i + 19), color: '#60A5FA' },
+  { key: 'lower', label: 'Plätze 19–25', emoji: '🥉', desc: 'Platz 19–25', ranks: Array.from({ length: 7 }, (_, i) => i + 19), color: '#60A5FA' },
 ];
 
 export default function TippPage({ countries, onDone }) {
@@ -131,7 +131,7 @@ export default function TippPage({ countries, onDone }) {
         <div className="tipp-explainer">
           <h3>So funktioniert's:</h3>
           <ol>
-            <li>Du tippst in <strong>drei Gruppen</strong> (Top 10 / Plätze 11–18 / Plätze 19–26)</li>
+            <li>Du tippst in <strong>drei Gruppen</strong> (Top 10 / Plätze 11–18 / Plätze 19–25)</li>
             <li>In jeder Gruppe wählst du, welches Land auf welchem Platz landet</li>
             <li>Nach dem ESC Finale werden die echten Ergebnisse eingetragen</li>
             <li>Wer am nächsten lag, gewinnt! 🏆</li>
