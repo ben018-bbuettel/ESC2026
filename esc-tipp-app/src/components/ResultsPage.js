@@ -6,7 +6,7 @@ export default function ResultsPage({ results, countries }) {
   const getGroup = (rank) => {
     if (rank <= 10) return { label: 'Top 10', color: '#FFD700', emoji: '🥇' };
     if (rank <= 18) return { label: '11–18', color: '#A78BFA', emoji: '🥈' };
-    return { label: '19–26', color: '#60A5FA', emoji: '🥉' };
+    return { label: '19–25', color: '#60A5FA', emoji: '🥉' };
   };
 
   return (
