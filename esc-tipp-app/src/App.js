@@ -58,7 +58,7 @@ export default function App() {
         <div className="header-inner">
           <div className="logo" onClick={() => setPage('home')}>
             <span className="logo-icon">🎤</span>
-            <span className="logo-text">ESC 2025</span>
+            <span className="logo-text">ESC 2026</span>
           </div>
           <nav className="nav">
             <button className={`nav-btn ${page === 'home' ? 'active' : ''}`} onClick={() => setPage('home')}>Start</button>
@@ -97,7 +97,7 @@ function HomePage({ setPage, resultsEntered }) {
   return (
     <div className="home">
       <div className="home-hero">
-        <div className="hero-badge">Basel 🇨🇭 2025</div>
+        <div className="hero-badge">Wien 🇦🇹 2026</div>
         <h1 className="hero-title">
           <span className="title-line">Wer tippt</span>
           <span className="title-line gradient-text">am besten?</span>
