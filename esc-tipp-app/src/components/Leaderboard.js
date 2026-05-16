@@ -5,8 +5,13 @@ import { supabase } from '../supabase';
 // Within-group bonus: if you got the country in the RIGHT group = 3 bonus pts
 function calcScore(predictedRank, actualRank) {
   const diff = Math.abs(predictedRank - actualRank);
-  const base = Math.max(0, 10 - diff);
-  return base;
+  if (diff === 0) return 12;
+  if (diff === 1) return 10;
+  if (diff === 2) return 5;
+  if (diff === 3) return 3;
+  if (diff === 4) return 2;
+  if (diff === 5) return 1;
+  return 0;
 }
 
 function getGroup(rank) {
